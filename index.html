@@ -49,6 +49,7 @@
         padding: 5px;
         margin: 10px;
       }
+
       .contentblock {
         background: #dfdedf;
         display: inline-block;
@@ -67,7 +68,17 @@
         display: flex;
         margin: 5px;
       }
-      .content{
+      .contentN{
+        background: #ffffff;
+        border: 3px solid #5024cc;
+        padding: 3px 2px 3px 3px;
+        height: 75vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 5px;
+        padding: 5px;
+      }
+	  .contentC{
         background: #ffffff;
         border: 3px solid #5024cc;
         padding: 3px 2px 3px 3px;
@@ -91,6 +102,17 @@
         font-size:25px;
         margin: 0;
       }
+	  
+	  
+	  /* for phones*/
+	@media only screen and (max-width: 880px) {
+		 .wrapp {display: none;}
+		 .navblock {width: 40vh;}
+		 .contentN {height: 23vh;}
+		 .contentblock {height: 50vh;}
+		 .contentC {height: 43vh; overflow-y: scroll;}
+		 
+	}
       
     </style>
   </head>
@@ -109,7 +131,7 @@
             <img width="20" src="/images/button_close.png">
           </div>
         </div>
-        <div class="content">
+        <div class="contentN">
           <a href="https://abrookst.github.io/sites/about.html"><p>>>About</p></a>
           <a href="https://abrookst.github.io/sites/projects.html"><p>>>Projects</p></a>
           <a href="https://abrookst.github.io/sites/contact.html"><p>>>Contact</p></a>
@@ -125,7 +147,7 @@
             <img width="20" src="/images/button_close.png">
           </div>
         </div>
-        <div class="content">
+        <div class="contentC">
   
           <p>Welcome! My name is Ali Brooks.</p>
           <br>
