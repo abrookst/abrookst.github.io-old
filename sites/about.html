@@ -12,6 +12,7 @@
   	    background-size: 400% 400%;
   	    animation: gradient 15s ease infinite;
   	    height: 90vh;
+  	    
       }
       a { 
         color: inherit;
@@ -45,6 +46,7 @@
         padding: 5px;
         margin: 10px;
       }
+
       .contentblock {
         background: #dfdedf;
         display: inline-block;
@@ -63,7 +65,7 @@
         display: flex;
         margin: 5px;
       }
-      .content{
+      .contentN{
         background: #ffffff;
         border: 3px solid #5024cc;
         padding: 3px 2px 3px 3px;
@@ -72,7 +74,18 @@
         overflow-y: auto;
         margin: 5px;
         padding: 5px;
-        font-family: 'apple_regular', Arial, sans-serif;
+        
+      }
+	  .contentC{
+        background: #ffffff;
+        border: 3px solid #5024cc;
+        padding: 3px 2px 3px 3px;
+        height: 75vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 5px;
+        padding: 5px;
+        font-family: 'apple_regular';
         font-weight:normal;
         font-style:normal;
       }
@@ -90,11 +103,17 @@
         font-size:25px;
         margin: 0;
       }
-      .text-module{
-        display: inline-block;
-        padding: 1%;
-
-      }
+	  
+	  
+	  /* for phones*/
+	@media only screen and (max-width: 880px) {
+		 .wrapp {display: none;}
+		 .navblock {width: 40vh;}
+		 .contentN {height: 23vh;}
+		 .contentblock {height: 50vh;}
+		 .contentC {height: 43vh; overflow-y: scroll;}
+		 
+	}
       
     </style>
   </head>
@@ -129,7 +148,7 @@
             <img width="20" src="/images/button_close.png">
           </div>
         </div>
-        <div class="content">
+        <div class="content" style="font-family: 'apple_regular';">
           <p>How much do you want to know about me?</p>
           <!--thanks for the idea junfero-->
           <div>
