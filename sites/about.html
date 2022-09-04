@@ -72,6 +72,9 @@
         overflow-y: auto;
         margin: 5px;
         padding: 5px;
+        font-family: 'apple_regular', Arial, sans-serif;
+        font-weight:normal;
+        font-style:normal;
       }
       #controls{
         display: flex;
@@ -160,8 +163,6 @@
           <script>
             const textModules = document.getElementsByClassName('text-module');
             const textLines = document.getElementsByClassName('subdescrip');
-
-            document.getElementById('default').click();
 
             function setModule(setting) {
               for (txt of textLines) {
