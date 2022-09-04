@@ -149,7 +149,42 @@
           <p>Hello! My name is Ali Brooks. And this is my portfolio website!</p>
           <br>
           <p>If you'd like to learn more about me and what I do, feel free to cick on the links in the navigation window to the left!</p>
-          
+          <!--TESTING-->
+          <div>
+            <div>
+              <div id='tldr-button' class='text-module t'>TLDR</div>
+              <div id='default-button' class='text-module t'>Default</div>
+              <div id='TMI-button' class='text-module t'>TMI</div>
+            </div>
+            <div id='tldr' class='subdescrip'>Hi! Me Ali</div>
+            <div id='default' class='subdescrip'>Hello! My Name is Ali</div>
+            <div id='TMI' class='subdescrip'>Greetings And Salutations! My name is Ali</div>
+          </div>
+          <script>
+            const textModules = document.getElementsByClassName('text-module');
+            const textLines = document.getElementsByClassName('subdescrip');
+
+            function setModule(setting) {
+              for (txt of textLines) {
+                  if (txt.id == setting) txt.style.display = 'block';
+                  else txt.style.display = 'none';
+              }
+            }
+
+            textModules[2].style.borderStyle = 'solid';
+            setModule('default');
+
+            for (let index=0; index<textModules.length; index++) {
+                let mod = textModules[index];
+                mod.addEventListener('click', () => {
+                    for (other of textModules) other.style.borderStyle = 'hidden';
+                    mod.style.borderStyle = 'solid';
+                    setModule(mod.id.split('-')[0]);
+                });
+                mod.addEventListener('mouseover', () => mod.style.cursor = 'pointer');
+            }
+          </script>  
+          <!--TESTING-->
         </div>
       </div>
     </div>
