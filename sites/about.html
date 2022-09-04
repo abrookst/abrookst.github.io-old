@@ -90,6 +90,7 @@
       .text-module{
         display: inline-block;
         padding: 1%;
+
       }
       
     </style>
@@ -160,6 +161,8 @@
             const textModules = document.getElementsByClassName('text-module');
             const textLines = document.getElementsByClassName('subdescrip');
 
+            document.getElementById('default').click();
+
             function setModule(setting) {
               for (txt of textLines) {
                   if (txt.id == setting) txt.style.display = 'block';
@@ -168,7 +171,7 @@
             }
 
             textModules[2].style.borderStyle = 'solid';
-            setModule('TLDR');
+            setModule('default');
 
             for (let index=0; index<textModules.length; index++) {
                 let mod = textModules[index];
