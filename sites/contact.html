@@ -39,7 +39,7 @@
         display: inline-block;
         border: 3px solid #5024cc;
         width: 300px;
-        height 85vh;
+        height: 85vh;
         overflow-y: hidden;
         overflow-x: hidden;
         padding: 5px;
@@ -51,7 +51,7 @@
         display: inline-block;
         border: 3px solid #5024cc;
         width: 600px;
-        height 85vh;
+        height: 85vh;
         overflow-y: hidden;
         overflow-x: hidden;
         padding: 5px;
@@ -105,14 +105,24 @@
 	  
 	  
 	  /* for phones*/
-	@media only screen and (max-width: 880px) {
-		 .wrapp {display: none;}
-		 .navblock {width: 40vh;}
-		 .contentN {height: 23vh;}
-		 .contentblock {height: 50vh;}
-		 .contentC {height: 43vh; overflow-y: scroll;}
-		 
-	}
+    @media only screen and (max-width: 880px) {
+      .wrapp {flex-wrap: wrap}
+      .navblock {width: 100vh; height: 30vh;}
+      .contentN {height: 20vh; overflow-y: hidden;}
+      .contentblock {width: 100vh; height: 50vh;}
+      .contentC {height: 40vh; overflow-y: scroll; word-wrap: break-word;}
+      
+    }
+    /* for zflip phones*/
+    @media only screen and (max-width: 320px) {
+      .wrapp {flex-wrap: wrap}
+      .navblock {width: 100vh; height: 30vh;}
+      .contentN {height: 20vh; overflow-y: hidden;}
+      .contentblock {width: 100vh; height: 50vh;}
+      .contentC {height: 40vh; overflow-y: scroll; word-wrap: break-word;}
+      .headertext { font-size: 10px; }
+      
+    }
       
     </style>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
