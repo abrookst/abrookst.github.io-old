@@ -8,7 +8,7 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <style>
       body{
-        background: linear-gradient(-45deg, #e08fe3, #b38fe3, #8f96e3, #8fc0e3);
+        background: linear-gradient(-45deg, #018281, #4263ce, #088059, #25beb1);
   	    background-size: 400% 400%;
   	    animation: gradient 15s ease infinite;
   	    height: 90vh;
@@ -38,24 +38,24 @@
       .navblock {
         background: #dfdedf;
         display: inline-block;
-        border: 3px solid #5024cc;
+        border: 3px solid #a8a8a8;
+        border-style: outset;
         width: 300px;
         height: 85vh;
         overflow-y: hidden;
         overflow-x: hidden;
-        padding: 5px;
         margin: 10px;
       }
 
       .contentblock {
         background: #dfdedf;
         display: inline-block;
-        border: 3px solid #5024cc;
+        border: 3px solid #a8a8a8;
+        border-style: outset;
         width: 600px;
         height: 85vh;
         overflow-y: hidden;
         overflow-x: hidden;
-        padding: 5px;
         margin: 10px;
       }
       .header{
@@ -67,9 +67,10 @@
       }
       .contentN{
         background: #ffffff;
+        color: #5024cc;
         border: 3px solid #5024cc;
         padding: 3px 2px 3px 3px;
-        height: 75vh;
+        height: 77.5vh;
         overflow-x: hidden;
         overflow-y: auto;
         margin: 5px;
@@ -78,9 +79,10 @@
       }
 	  .contentC{
         background: #ffffff;
+        color: #5024cc;
         border: 3px solid #5024cc;
         padding: 3px 2px 3px 3px;
-        height: 75vh;
+        height: 77.5vh;
         overflow-x: hidden;
         overflow-y: auto;
         margin: 5px;
@@ -103,20 +105,25 @@
         font-size:25px;
         margin: 0;
       }
-	  
-	  
-	  /* for phones*/
-    @media only screen and (max-width: 880px) {
-      .contentblock {height: 88vh;}
-      .contentC {height: 80vh; overflow-y: scroll; word-wrap: break-word;}
-    }
-    /* for zflip phones*/
-    @media only screen and (max-width: 320px) {
-      .contentblock {height: 88vh;}
-      .contentC {height: 80vh; overflow-y: scroll; word-wrap: break-word;}
-      .headertext { font-size: 10px; }
-    }
-      
+	/* for phones*/
+@media only screen and (max-width: 880px) {
+  .wrapp {flex-wrap: wrap}
+  .navblock {width: 100vh; height: 30vh;}
+  .contentN {height: 22vh; overflow-y: hidden;}
+  .contentblock {width: 100vh; height: 50vh;}
+  .contentC {height: 42vh; overflow-y: scroll; word-wrap: break-word;}
+  
+}
+/* for zflip phones*/
+@media only screen and (max-width: 320px) {
+  .wrapp {flex-wrap: wrap}
+  .navblock {width: 100vh; height: 30vh;}
+  .contentN {height: 22vh; overflow-y: hidden;}
+  .contentblock {width: 100vh; height: 50vh;}
+  .contentC {height: 42vh; overflow-y: scroll; word-wrap: break-word;}
+  .headertext { font-size: 10px; }
+  
+}
     </style>
   </head>
   <body>
