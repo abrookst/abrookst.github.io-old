@@ -81,7 +81,7 @@ a {
   background: #ffffff;
   color: #5024cc;
   border: 3px solid #5024cc;
-  height: calc(100% - 65px);
+  height: calc(100% - 63px);
   overflow-x: hidden;
   overflow-y: hidden;
   margin: 5px;
@@ -91,7 +91,7 @@ a {
   background: #ffffff;
   color: #5024cc;
   border: 3px solid #5024cc;
-  height: calc(100% - 65px);
+  height: calc(100% - 63px);
   overflow-x: hidden;
   overflow-y: scroll;
   margin: 5px;
@@ -124,17 +124,17 @@ a {
 @media only screen and (max-width: 880px) {
   .wrapp {flex-wrap: wrap}
   .navblock {width: 100vh; height: 30vh;}
-  .contentN {height: calc(100% - 65px); overflow-y: scroll;}
+  .contentN {height: calc(100% - 63px); overflow-y: scroll;}
   .contentblock {width: 100vh; height: 50vh;}
-  .contentC {height: calc(100% - 65px); overflow-y: scroll; word-wrap: break-word;}
+  .contentC {height: calc(100% - 63px); overflow-y: scroll; word-wrap: break-word;}
 }
 /* for zflip phones */
 @media only screen and (max-width: 320px) {
   .wrapp {flex-wrap: wrap}
   .navblock {width: 100vh; height: 30vh;}
-  .contentN {height: calc(100% - 65px); overflow-y: scroll;}
+  .contentN {height: calc(100% - 63px); overflow-y: scroll;}
   .contentblock {width: 100vh; height: 50vh;}
-  .contentC {height: calc(100% - 65px); overflow-y: scroll; word-wrap: break-word;}
+  .contentC {height: calc(100% - 63px); overflow-y: scroll; word-wrap: break-word;}
   .headertext { font-size: 10px; }
   
 }
